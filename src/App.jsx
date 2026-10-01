@@ -1,7 +1,10 @@
+import TodoForm from "./TodoForm";
+
 function App() {
-    return(
-        <>
-        </>
-    );
+  return (
+    <>
+      <TodoForm />
+    </>
+  );
 }
-export default App
+export default App;
