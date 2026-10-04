@@ -354,6 +354,23 @@
   animation: fadeOut var(--transition-normal) ease-in forwards;
 }
 
+/* Task Text Styles (used by TodoItem component) */
+.task-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  word-break: break-word;
+  transition:
+    color var(--transition-fast),
+    text-decoration var(--transition-fast);
+}
+
+.task-text.completed {
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
 @keyframes fadeOut {
   to {
     opacity: 0.5;
