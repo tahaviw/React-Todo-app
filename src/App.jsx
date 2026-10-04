@@ -10,7 +10,7 @@ function App() {
       text: text,
       completed: false,
     };
-    setTasks(task);
+    setTasks([...tasks, task]);
   };
   console.log(tasks);
   return (
