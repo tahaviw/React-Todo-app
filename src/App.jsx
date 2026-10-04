@@ -6,11 +6,13 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const addTask = (text) => {
     const task = {
-      id: 0,
+      id: Date.now(), //this one gives every task specific id based on the ms it's created on
       text: text,
-      complited: false,
+      completed: false,
     };
+    setTasks(task);
   };
+  console.log(tasks);
   return (
     <>
       <TodoForm onAdd={addTask} />
