@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TodoForm from "./TodoForm";
+import TodoList from "./TodoList";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <TodoForm onAdd={addTask} />
+      <TodoList />
     </>
   );
 }
