@@ -11,6 +11,7 @@ function TodoItem({ task, onToggle, onDelete }) {
           onClick={() => onToggle(task.id)}
         />
       </label>
+      <button onClick={() => onDelete(task.id)}>Delete</button>
     </div>
   );
 }
