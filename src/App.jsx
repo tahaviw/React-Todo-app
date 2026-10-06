@@ -26,7 +26,9 @@ function App() {
       }),
     );
   };
-  const deleteTask = () => {};
+  const deleteTask = (id) => {
+    setTasks();
+  };
 
   return (
     <>
