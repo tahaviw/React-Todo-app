@@ -14,6 +14,20 @@ function App() {
     setTasks([...tasks, task]);
   };
   console.log(tasks);
+
+  const toggleTask = (id) => {
+    setTasks(
+      tasks.map((task) => {
+        if (task.id === id) {
+          return { ...task, completed: !task.completed };
+        } else {
+          return task;
+        }
+      }),
+    );
+  };
+  const deleteTask = () => {};
+
   return (
     <>
       <TodoForm onAdd={addTask} />
