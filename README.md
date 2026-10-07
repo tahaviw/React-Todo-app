@@ -1,16 +1,50 @@
-# React + Vite
+cat > README.md << 'EOF'
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Sprint — Learning Workbook
 
-Currently, two official plugins are available:
+**Status:** Month 7 (React Fundamentals) · Blocks B1–B9 Complete · B10 In Progress
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What This Is
 
-## React Compiler
+This repository is a structured, Pomodoro-driven learning journal for React fundamentals. It contains incremental experiments, component drills, and small exercises built while working through a 12-month frontend engineering roadmap.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Every commit corresponds to a learning block. The code evolves as concepts are introduced, refactored, and sometimes deliberately broken to understand why things work.
 
-## Expanding the ESLint configuration
+## Roadmap Context
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Month | Focus                                                       | Status         |
+| ----- | ----------------------------------------------------------- | -------------- |
+| 1–5   | HTML, CSS, JavaScript, DOM                                  | ✅ Complete    |
+| 6–7   | React (Vite, JSX, Components, Props, State, Hooks, Effects) | 🔄 In Progress |
+| 8–9   | Advanced React, TypeScript, Backend Basics                  | ⏳ Upcoming    |
+| 10–11 | Portfolio, CV, LeetCode, Interview Prep                     | ⏳ Upcoming    |
+| 12    | Job Applications                                            | ⏳ Upcoming    |
+
+## Completed Blocks
+
+- **B1** — Vite scaffold, project structure, `main.jsx` entry point
+- **B2** — JSX syntax, expressions, `className`, self-closing tags, single root element
+- **B3** — Function components, composition, file structure, export/import
+- **B4** — Props, destructuring, one-way data flow, `children` prop
+- **B5** — `useState`, re-renders, state vs. plain variables
+- **B6** — Event handling, controlled inputs, forms, `preventDefault`
+- **B7** — Conditional rendering: ternary `? :`, `&&` short-circuit, early returns
+- **B8** — Lists & `.map()`, `key` prop, why index-as-key breaks on reorder
+- **B9** — `useEffect`, dependency array `[]`, fetch on mount, cleanup concept
+
+## Current Block
+
+- **B10** — React To-Do App (first shipped project, separate repo: `react-todo-app`)
+
+## Tech Stack
+
+- React 19 (functional components + Hooks)
+- Vite
+- ESLint
+
+## How to Run
+
+```bash
+npm install
+npm run dev
+```
