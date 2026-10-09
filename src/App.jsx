@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <TodoForm onAdd={addTask} />
-      <TodoList />
+      <TodoList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask} />
     </>
   );
 }

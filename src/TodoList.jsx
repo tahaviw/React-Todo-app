@@ -1,7 +1,7 @@
 import TodoItem from "./TodoItem";
 
 function TodoList({ tasks, onToggle, onDelete }) {
-  if (!tasks) {
+  if (tasks.length === 0) {
     return <p>No tasks yet</p>;
   } else {
     return (
