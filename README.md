@@ -14,11 +14,11 @@ Every commit corresponds to a learning block. The code evolves as concepts are i
 
 | Month | Focus                                                       | Status         |
 | ----- | ----------------------------------------------------------- | -------------- |
-| 1–5   | HTML, CSS, JavaScript, DOM                                  | ✅ Complete    |
-| 6–7   | React (Vite, JSX, Components, Props, State, Hooks, Effects) | 🔄 In Progress |
-| 8–9   | Advanced React, TypeScript, Backend Basics                  | ⏳ Upcoming    |
-| 10–11 | Portfolio, CV, LeetCode, Interview Prep                     | ⏳ Upcoming    |
-| 12    | Job Applications                                            | ⏳ Upcoming    |
+| 1–5   | HTML, CSS, JavaScript, DOM                                  |  Complete    |
+| 6–7   | React (Vite, JSX, Components, Props, State, Hooks, Effects) |  In Progress |
+| 8–9   | Advanced React, TypeScript, Backend Basics                  |  Upcoming    |
+| 10–11 | Portfolio, CV, LeetCode, Interview Prep                     |  Upcoming    |
+| 12    | Job Applications                                            |  Upcoming    |
 
 ## Completed Blocks
 
