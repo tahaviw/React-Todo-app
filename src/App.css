@@ -17,11 +17,12 @@
    BASE LAYOUT
    ========================================================================== */
 .app {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: clamp(1.5rem, 4vw, 3rem) 1rem;
+  width: 100%;
+  max-width: 520px;
+  /* Padding handled in index.css for sticky footer layout */
 }
 
 /* Header */
@@ -193,12 +194,6 @@
 
 /* ==========================================================================
    TASK ITEM (.task-text)
-   Structure:
-   <div class="task-text [completed]">
-     <p>Task text</p>
-     <label><input type="checkbox" /></label>
-     <button>Delete</button>
-   </div>
    ========================================================================== */
 .task-text {
   display: flex;
@@ -471,5 +466,71 @@
     width: auto;
     padding: 0 0.5rem;
     font-size: 0.7rem;
+  }
+}
+
+/* ==========================================================================
+   FOOTER COMPONENT (.site-footer)
+   ========================================================================== */
+
+/* Footer component wrapper - full width */
+.site-footer {
+  margin-top: 20px;
+  width: 100%;
+  padding: calc(1.5rem + 20px) 1rem 1.5rem;
+  text-align: center;
+  background: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Inner content centered to match app width */
+.site-footer__inner {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* Footer text paragraph */
+.site-footer__text {
+  margin: 0 0 0.75rem;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+/* Footer tech stack paragraph */
+.site-footer__tech {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Style the <br> as a separator */
+.site-footer__tech br {
+  display: none;
+}
+
+.site-footer__tech br + *::before {
+  content: " · ";
+  margin-left: 0.5rem;
+}
+
+/* Footer responsive */
+@media (max-width: 480px) {
+  .site-footer {
+    padding: 1.25rem 1rem;
+  }
+
+  .site-footer__text {
+    font-size: 0.8125rem;
+  }
+
+  .site-footer__tech {
+    font-size: 0.6875rem;
   }
 }
