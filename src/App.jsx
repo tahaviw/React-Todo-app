@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
+import Footer from "./Footer";
 import "./App.css";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     <>
       <TodoForm onAdd={addTask} />
       <TodoList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask} />
+      <Footer name="Taha Belghiti" year="2026" />
     </>
   );
 }
