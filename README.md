@@ -1,6 +1,6 @@
 cat > README.md << 'EOF'
 
-# React Sprint — Learning Workbook
+# React Sprint Learning Workbook
 
 **Status:** Month 7 (React Fundamentals) · Blocks B1–B9 Complete · B10 In Progress
 
