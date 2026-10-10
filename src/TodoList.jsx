@@ -17,6 +17,5 @@ function TodoList({ tasks, onToggle, onDelete }) {
       </div>
     );
   }
-  return;
 }
 export default TodoList;
