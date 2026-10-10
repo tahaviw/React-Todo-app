@@ -6,9 +6,9 @@ function TodoItem({ task, onToggle, onDelete }) {
       {task.text}
       <label>
         <input
-          type="ckeckbox"
+          type="checkbox"
           checked={task.completed}
-          onClick={() => onToggle(task.id)}
+          onChange={() => onToggle(task.id)}
         />
       </label>
       <button onClick={() => onDelete(task.id)}>Delete</button>
