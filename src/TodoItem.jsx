@@ -3,7 +3,7 @@ function TodoItem({ task, onToggle, onDelete }) {
     <div className={`task-text ${task.completed ? "completed" : ""}`}>
       {" "}
       {/*task-text sets the default text style that never changes whether the task is done or not*/}
-      {task.text}
+      <p>{task.text}</p>
       <label>
         <input
           type="checkbox"
